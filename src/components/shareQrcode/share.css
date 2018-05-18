@@ -1,0 +1,125 @@
+.ui-share-container {
+  display: inline-block;
+}
+.ui-share-container .share-button {
+  position: relative;
+  display: inline-block;
+  padding-left: 32px;
+  padding-right: 10px;
+  line-height: 32px;
+  font-size: 12px;
+  cursor: pointer;
+  color: #9B9B9B;
+  border: 1px solid #d9d9d9;
+  border-radius: 5px;
+  height: 32px;
+}
+.ui-share-container .share-button:hover {
+  border-color: #ccc;
+}
+.ui-share-container.icon-style {
+  width: 100%;
+}
+.ui-share-container.icon-style .share-button {
+  width: 100%;
+  color: #333;
+  padding: 18px 0 0;
+  line-height: 1.5;
+  margin: 0;
+  text-align: center;
+  border: none;
+  background-position: center top;
+}
+
+.ui-share-container .share-popover {
+  position: absolute;
+  display: none;
+  min-width: 414px;
+  top: 100%;
+  right: 0;
+  padding: 24px 0 24px 24px;
+  margin-top: 8px;
+  z-index: 1000;
+  background: #fff;
+  border: 1px solid #e9e9e9;
+  -webkit-box-shadow: 0 2px 4px 0 rgba(0,0,0,0.06);
+  box-shadow: 0 2px 4px 0 rgba(0,0,0,0.06);
+  overflow: hidden;
+}
+.ui-share-container.active .share-popover {
+  display: block;
+}
+.ui-share-container.align-bottom-left .share-popover {
+  left: 10px;
+  right: auto;
+}
+.ui-share-container .share-popover .share-content {
+  float: left;
+  text-align: left;
+}
+.ui-share-container .share-popover .share-title {
+  font-size: 13px;
+  color: #000;
+}
+.ui-share-container .share-popover .share-url-box {
+  display: block;
+  width: 240px;
+  height: 30px;
+  line-height: 30px;
+  margin: 5px 0;
+  font-size: 13px;
+  border: 0;
+  background: transparent;
+  color: #5d5d5d;
+}
+.ui-share-container .share-popover .share-copy-button {
+  display: inline-block;
+  padding: 6px 12px;
+  font-size: 12px;
+  color: #fff;
+  background: #287ddc;
+  border-radius: 2px;
+  cursor: pointer;
+}
+.ui-share-container .share-popover .share-copy-button:hover {
+  background: #2563C1;
+}
+.ui-share-container .share-popover .share-qrcode {
+  float: right;
+  padding: 0 16px;
+  border-left: 1px solid #eee;
+  overflow: hidden;
+  text-align: center;
+}
+.ui-share-container .share-popover .qrcode-box {
+  width: 90px;
+  height: 90px;
+  margin: 0 auto 10px;
+}
+.ui-share-container .share-popover .qrcode-box img {
+  max-width: 100%;
+  max-height: 100%;
+}
+.ui-share-container .share-popover .qrcode-description {
+  font-size: 12px;
+  color: #000000;
+}
+
+.share-content{
+  width: 220px;
+}
+
+.ui-share-container.active .share-button{
+  border-color: #287ddc;
+  color: #287ddc;
+}
+
+.anticon-share-alt{
+  position: absolute;
+  left: 10px;
+  top: 10px;
+}
+
+.ui-share-container .share-popover{
+  right: 36px;
+}

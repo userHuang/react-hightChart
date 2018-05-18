@@ -1,0 +1,118 @@
+.icon-color0{
+  background-image: url('../.././images/color/icon_color0.png');
+}
+.icon-color1{
+  background-image: url('../.././images/color/icon_color1.png');
+}
+.icon-color2{
+  background-image: url('../.././images/color/icon_color2.png');
+}
+.icon-color3{
+  background-image: url('../.././images/color/icon_color3.png');
+}
+.icon-color4{
+  background-image: url('../.././images/color/icon_color4.png');
+}
+.icon-color5{
+  background-image: url('../.././images/color/icon_color5.png');
+}
+.icon-color6{
+  background-image: url('../.././images/color/icon_color6.png');
+}
+.icon-color7{
+  background-image: url('../.././images/color/icon_color7.png');
+}
+.icon-color8{
+  background-image: url('../.././images/color/icon_color8.png');
+}
+
+.abc-chart-colorselect-con{
+  height:280px;
+  padding: 15px 0;
+  .select-input{
+      height: 36px;
+      width: 100%;
+      padding: 0 100px 0 0;
+  }
+  .abc-chart-colorselect{
+    height: 180px;
+  }
+  .ant-tabs-tab{
+    text-align: left!important;
+    margin-bottom: 0!important;
+    padding: 8px 0!important;
+    > div{
+      width: 75px;
+      padding-right: 15px;
+      white-space: nowrap;
+      overflow: hidden;
+      text-overflow: ellipsis;
+    }
+  }
+  .circle-picker{
+    margin: 10px 0!important;
+  }
+  .ant-input, .ant-select{
+    margin: 5px 0;
+    height: 25px;
+    line-height: 25px;
+  }
+  .ant-select{
+    margin-left: 15px;
+  }
+  .abc-chart-colorselect-footer{
+    text-align: right;
+    .ant-btn{
+      margin: 10px 10px;
+    }
+  }
+  .right{
+    float:right;
+    margin-top: 25px;
+    .save-btn{
+      display: inline-block;
+      width: 85px;
+      height: 28px;
+      line-height: 28px;
+      text-align: center;
+      border-radius: 0;
+      cursor: pointer;
+      margin-right: 22px;
+      background: #1FA3F8;
+      border: none;
+      color: #FFF;
+    }
+    .cancel-btn{
+      display: inline-block;
+      width: 85px;
+      height: 28px;
+      line-height: 28px;
+      color: #FFFFFF;
+      text-align: center;
+      background: #CCCCCC;
+      border: 0;
+      border-radius: 0;
+      cursor: pointer;
+    }
+    .cancel-btn:hover{
+      border: 0;
+    }
+    .cancel-btn:focus{
+      border: 0;
+    }
+  }
+  .tab-color{
+    float: left;
+    width: 14px;
+    height: 14px;
+    margin: 4px 4px 0 0 ;
+    border-radius: 50%;
+  }
+}
+.color{
+  display: inline-block;
+  width: 60px;
+  height: 16px;
+  margin-right: 10px;
+  vertical-align: middle;
+}

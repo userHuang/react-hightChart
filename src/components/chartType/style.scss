@@ -1,0 +1,110 @@
+.abc-chart-typeselect{
+  height: 155px;
+  .ant-tabs-tab{
+    text-align: left!important;
+    margin-bottom: 0!important;
+    > div{
+      width: 120px;
+      padding: 0 15px 0 45px;
+      background-repeat: no-repeat;
+      background-position: 15px center;
+      background-size: 20px 20px;
+      white-space: nowrap;
+      overflow: hidden;
+      text-overflow: ellipsis;
+      cursor: pointer;
+    }
+  }
+  .ant-tabs-ink-bar{
+    height: 25px;
+  }
+  .ant-tabs-content{
+    width: 200px;
+    padding-top: 20px;
+  }
+  .ant-tabs-tabpane{
+    .anticon{
+      font-size: 20px;
+      color: #11c6ed;
+      padding: 2px;
+      margin: 5px;
+      cursor: pointer;
+    }
+    .disabled{
+      color: #999;
+    }
+    .selected{
+      border: #3f51b5 1px solid;
+    }
+  }
+  .ant-tabs-tab{
+    padding: 8px 0!important;
+  }
+  .chart-img{
+    margin: 0 10px 10px;
+    width: 26px;
+    height: 26px;
+    box-sizing: border-box;
+  }
+}
+.abc-chart-type{
+  height:238px;
+  padding: 15px 0;
+  .right{
+    float:right;
+    margin-top: 25px;
+    .save-btn{
+      display: inline-block;
+      width: 85px;
+      height: 28px;
+      line-height: 28px;
+      color: #fff;
+      text-align: center;
+      border-radius: 0;
+      cursor: pointer;
+      margin-right: 22px;
+      background: #1FA3F8;
+      border: none;
+      color: #FFF;
+    }
+    .cancel-btn{
+      display: inline-block;
+      width: 85px;
+      height: 28px;
+      line-height: 28px;
+      color: #FFFFFF;
+      text-align: center;
+      background: #CCCCCC;
+      border: 0;
+      border-radius: 0;
+      cursor: pointer;
+    }
+    .cancel-btn:hover{
+      border: 0;
+    }
+    .cancel-btn:focus{
+      border: 0;
+    }
+  }
+  .line-chart{
+    background-image: url('../.././images/chart/line-chart.png');
+  }
+  .scatter-chart{
+    background-image: url('../.././images/chart/scatter-chart.png');
+  }
+  .column-chart{
+    background-image: url('../.././images/chart/column-chart.png');
+  }
+  .area-chart{
+    background-image: url('../.././images/chart/area-chart.png');
+  }
+  .bar-chart{
+    background-image: url('../.././images/chart/bar-chart.png');
+  }
+  .pie-chart{
+    background-image: url('../.././images/chart/pie-chart.png');
+  }
+  .pie-chart-disable{
+    background-image: url('../.././images/chart/pie-chart-disable.png');
+  }
+}

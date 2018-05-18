@@ -1,0 +1,29 @@
+{
+  "name": "chart",
+  "version": "0.1.0",
+  "private": true,
+  "dependencies": {
+    "antd": "^3.5.2",
+    "copy-to-clipboard": "^3.0.8",
+    "css-loader": "^0.28.11",
+    "highcharts-exporting": "^0.1.7",
+    "highcharts-offline-exporting": "^0.1.7",
+    "node-sass": "^4.9.0",
+    "qrcode.react": "^0.8.0",
+    "react": "^16.3.2",
+    "react-color": "^2.14.1",
+    "react-dom": "^16.3.2",
+    "react-highcharts": "^16.0.2",
+    "react-router-dom": "^4.2.2",
+    "react-scripts": "1.1.4",
+    "sass-loader": "^7.0.1",
+    "style-loader": "^0.21.0",
+    "xlsx": "^0.12.12"
+  },
+  "scripts": {
+    "start": "react-scripts start",
+    "build": "react-scripts build",
+    "test": "react-scripts test --env=jsdom",
+    "eject": "react-scripts eject"
+  }
+}
