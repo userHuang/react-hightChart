@@ -9,7 +9,7 @@ import { Popover,Icon } from 'antd';
 import ChartColorPanel from './ChartColorPanel';
 import { chartColor } from '../../lib/util';
 
-import '.././hightChart.css'
+// import '.././hightChart.css'
 import './color.scss'
 
 class ChartColorContent extends Component {
@@ -53,8 +53,8 @@ class ChartColorContent extends Component {
         <div className="right-text">切换颜色</div>
         <Popover className="xi-popover" placement="topRight" content={chartColorPanel} trigger="click" visible={colorVisible} onVisibleChange={this.changeColorVisible}>
           <div className="select" style ={{width:"100px"}}>
-              <div className={backgroundImg}/>
-              <Icon type="down" />
+            <div className={backgroundImg}/>
+            <Icon type="down" />
           </div>
         </Popover>
       </div>

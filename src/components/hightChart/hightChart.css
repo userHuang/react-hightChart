@@ -21,10 +21,10 @@
   top: 0px;
 }
 
-.xui-chart-head .xi-chart-time{
+/*.xui-chart-head .xi-chart-time{
   position: absolute;
   top: 40px;
-}
+}*/
 
 /*颜色面板*/
 .xui-item-content .right-text{
@@ -109,4 +109,8 @@
 
 .xa-isExport-false{
   display: none;
+}
+
+.JS-finful-source{
+  color: rgba(0, 0, 0, 0.65);
 }

@@ -10,31 +10,31 @@ import { Modal } from 'antd';
 import ChartImage from "./ChartImage";
 
 class DownloadChart extends Component {
-    state = {
-      chartConf: this.props.config,
-      showImageSetting: false
-    }
-    
-    showDownloadImg = () => {
-      this.setState({
-        showImageSetting: true
-      });
-    }
+  state = {
+    chartConf: this.props.config,
+    showImageSetting: false
+  }
+  
+  showDownloadImg = () => {
+    this.setState({
+      showImageSetting: true
+    });
+  }
 
-    render() {
-      const {showImageSetting, chartConf} = this.state;
-      const isExportChart = this.props.isExportChart;
-      return (
-        <div className ={`xui-downloadChart xa-isExportChart-${isExportChart}`}>
-          <a onClick = {this.showDownloadImg}>导出图表</a>
-          <Modal title='导出图片' width={900} footer={null}
-            visible={showImageSetting}
-            onCancel={() => this.setState({showImageSetting: false})}>
-            <ChartImage chartConf={chartConf}/>
-          </Modal>
-        </div>
-      )
-    }
+  render() {
+    const {showImageSetting, chartConf} = this.state;
+    const isExportChart = this.props.isExportChart;
+    return (
+      <div className ={`xui-downloadChart xa-isExportChart-${isExportChart}`}>
+        <a onClick = {this.showDownloadImg}>导出图表</a>
+        <Modal title='导出图片' width={900} footer={null}
+          visible={showImageSetting}
+          onCancel={() => this.setState({showImageSetting: false})}>
+          <ChartImage chartConf={chartConf}/>
+        </Modal>
+      </div>
+    )
+  }
 }
 
 export default DownloadChart;

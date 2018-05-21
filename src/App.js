@@ -2,7 +2,7 @@ import React, { Component } from 'react';
 import { Switch, Route, withRouter } from 'react-router-dom';
 import './App.css';
 
-import ABCHightChart from './components/ABCHightChart';
+import ABCHightChart from './components/hightChart/ABCHightChart';
 
 
 // <Switch>
@@ -102,6 +102,14 @@ class App extends Component {
       "x": 309.07,
       "y": 420.88
     };
+    const acticleInfo = {
+      type: '行业分析',
+      author: '李隆海',
+      source_title: "东莞证券-<font color='red'>半导体</font>材料专题报告：受益下游产能大幅扩张，进口替代空间巨大-180419",
+      source_url: 'http://abc-crawler.oss-cn-hangzhou-internal.aliyuncs.com/hibor/1697dd491c0c4820b63f919595e3278c.pdf',
+      image_title: '图1：半导体材料市场规模占比',
+      time: '2018-04-20 11:53:40'
+    }
     /*
       isShare:         是否显示分享
       isChangeType:    是否显示切换类型
@@ -123,6 +131,7 @@ class App extends Component {
       <div className="App">
         <ABCHightChart 
           chartData={data} 
+          acticleInfo={acticleInfo} 
           isShare={true} 
           isChangeType={true} 
           isChangeColor={true} 

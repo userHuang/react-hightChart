@@ -9,7 +9,7 @@ import { Popover,Icon } from 'antd';
 import ChartTypePanel from './ChartTypePanel';
 
 import './style.scss';
-import '.././hightChart.css'
+// import '.././hightChart.css'
 
 class ChartTypeContent extends Component {
   state = {
