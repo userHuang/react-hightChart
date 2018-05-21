@@ -18,7 +18,7 @@ class DownloadChart extends Component {
     download = () => {
       const { chartConf } = this.state;
       const downloadData = tableUtils.getImageText(chartConf);
-      tableUtils.downloadExcel(chartConf.title.text, downloadData);
+      tableUtils.downloadExcel(chartConf.chartTitle, downloadData);
     }
 
     render() {

@@ -28,25 +28,25 @@ class ABCHightChart extends Component {
 
   render() {
     const { isShare, isExportData, isExportChart, isChangeType, isChangeColor } = this.props;
-    const { chartData } = this.state;
-    const config = chartData.data;
+    const { chartData, config } = this.state;
     const width = this.props.width || null;
     const height = this.props.height || null;
+    //设置图表大小
     config["chart"] = {
       width: width,
       height: height
     }
+
+    config['chartTitle'] = config.title.text;
+    //不展示默认标题
     config["title"] = {
       text: ''
     }
-
 
     let isExport;
     if(!isExportData && !isExportChart && isExportData !== undefined && isExportChart !== undefined){
       isExport = false;
     }
-
-    console.log(isShare, isExport, isChangeType, isChangeColor,"===isShare, isExport, isChangeType, isChangeColor===");
 
     const content = (
       <div>
@@ -54,10 +54,11 @@ class ABCHightChart extends Component {
         <DownloadChart config={config} isExportChart={isExportChart}/>
       </div>
     );
+
     return (
       <div className="ABC-HightChart">
         <div className="xui-chart-head">
-          <div className="xi-chart-title">{chartData.title}</div>
+          <div className="xi-chart-title">{config.chartTitle}</div>
           <div className="xi-chart-time">{config.AlgorithmCommitTime.text}</div>
           <div className={`xi-chart-share xa-chart-custom-compoent xa-isShare-${isShare}`}>
             <ShareQrcode />
